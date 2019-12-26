@@ -1,4 +1,4 @@
-# Dynamic-TableView-Height-Example-NOt-working-
+# Dynamic-TableView-Height-Example
 Trying to make tableview height dynamic
 
 
