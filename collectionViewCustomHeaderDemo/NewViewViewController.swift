@@ -16,8 +16,8 @@ class NewViewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        myNewTableView.rowHeight = 60
-        myNewTableView.estimatedRowHeight = UITableView.automaticDimension
+//        myNewTableView.rowHeight = 60
+//        myNewTableView.estimatedRowHeight = UITableView.automaticDimension
         
     }
 
@@ -38,7 +38,7 @@ extension NewViewViewController:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NewTableViewCell", for: indexPath) as! NewTableViewCell
-        cell.testLabel.text = "Testing the height of tableview"
+        cell.testLabel.text = "Testing the height of tableview \(indexPath.row)"
 
         self.tableViewHeightConstraint.constant = self.myNewTableView.contentSize.height
         self.view.layoutIfNeeded()
