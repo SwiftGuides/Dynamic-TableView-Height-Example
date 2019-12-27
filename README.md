@@ -8,8 +8,8 @@ Note :- Make Row Height constant to not cut any cell edges on the buttom of the 
 
 Steps :- 
 1. Drag scrollView and give constraint to all the edges. (Turn Off Content Layout Guides First)
-2. After thta drag UIView In ScrollView And give its constraint to all the edges of scrollview.
-3. Give UIView Height & Width Proptional to Main UIView Of ViewController.
+2. After that drag UIView In ScrollView And give its constraint to all the edges of scrollview.
+3. Give UIView equal Width Proptional to Main UIView Of ViewController.(Dont give equal height to the Main UIView or it won't work)
 4. Now drag any UIVIew on the top side make its height Constant.
 5. After that put tableView just below the new UIView And Give its constraint to the edges and top to the new uiview.(Remeber to turn of scrolling for tableview)
 6. Now Give TableView a Specific Constant height , lets say its 100 and check priorirty should be 1000.
