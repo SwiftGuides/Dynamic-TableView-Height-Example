@@ -7,7 +7,7 @@ Source :- https://stackoverflow.com/a/59486428/12189609
 Note :- Make Row Height constant to not cut any cell edges on the buttom of the tableview
 
 Steps :- 
-1. Drag scrollView and give constraint to all the edges. (Turn Off Content Layout Guides First)
+1. Drag scrollView and give constraint to all the edges. (Turn Off Content Layout Guides First and also change content inset to never)
 2. After that drag UIView In ScrollView And give its constraint to all the edges of scrollview.
 3. Give UIView equal Width Proptional to Main UIView Of ViewController.(Dont give equal height to the Main UIView or it won't work)
 4. Now drag any UIVIew on the top side make its height Constant.
